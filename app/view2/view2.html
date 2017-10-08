@@ -1,0 +1,22 @@
+<p>This is the partial for view 2.</p>
+<p>
+  Showing of 'interpolate' filter:
+  {{ 'Current version is v%VERSION%.' | interpolate }}
+</p>
+
+
+<h1>Manager list</h1>
+<ul>
+    <li ng-repeat="manager in managers">
+        <dl>
+            <dt>Name:</dt>
+            <dd> {{ manager.name }}</dd>
+            <dt>Age:</dt>
+            <dd> {{ manager.age }}</dd>
+            <dt>Job:</dt>
+            <dd>{{ manager.job }}</dd>
+        </dl>
+        <dl>
+        </dl>
+    </li>
+</ul>
